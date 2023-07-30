@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube-Navbar</title>
+    <!-- adding material icon link  -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- adding css  -->
+    <style>
+        /* general properties */
+        
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            text-align: center;
+        }
+        
+        input {
+            border: none;
+            outline: none;
+            background: none;
+        }
+        
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        /* navbar */
+        
+        .material-icons {
+            font-size: 24px;
+        }
+        
+        .navbar {
+            border: none;
+            outline: none;
+            height: 52px;
+            box-shadow: 0 1px 2px black;
+            padding: 3px 13px 6px;
+            justify-content: space-between;
+        }
+        
+        .navbar a {
+            line-height: 36px;
+            height: 36px;
+            margin-right: 13px;
+        }
+        
+        .flex-row {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        .nav-left .logo {
+            margin-right: 3px;
+        }
+        
+        .nav-left img {
+            height: 36px;
+        }
+        
+        .heading {
+            font-size: 24px;
+        }
+        
+        .nav-mid {
+            border: 1px solid black;
+            border-radius: 20px;
+            height: 36px;
+            margin-right: 13px;
+        }
+        
+        .nav-mid input {
+            margin-left: 13px;
+        }
+        
+        .nav-mid a {
+            border-bottom-right-radius: 20px;
+            border-top-right-radius: 20px;
+            background: gray;
+            width: 44px;
+            text-align: center;
+            margin: 0;
+        }
+        
+        .search-icon {
+            display: none;
+        }
+        /* media query for medium screen tablet size and lower */
+        
+        @media (max-width:560px) {
+            .nav-mid input {
+                width: 80px;
+            }
+            .navbar a {
+                margin-right: 8px;
+            }
+            .logo {
+                margin-right: 3px;
+            }
+            .nav-mid a {
+                margin: 0;
+            }
+        }
+        /* media query for small screen phone size and lower */
+        
+        @media (max-width:490px) {
+            .nav-mid {
+                display: none;
+            }
+            .search-icon {
+                display: block;
+            }
+            .navbar a {
+                margin-right: 3px;
+            }
+            .logo {
+                margin-right: 1px;
+            }
+            .nav-mid a {
+                margin: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- navbar start -->
+    <nav class="navbar flex-row">
+        <div class="nav-left flex-row">
+            <a href="" class="material-icons">menu</a>
+            <a href="" class="material-icons logo"><img src="logo.png" alt=""></a>
+            <a href="" class="heading">YouTube</a>
+        </div>
+        <div class="nav-mid flex-row">
+            <input type="text" name="" id="" class="input-box">
+            <a href="" class="material-icons">search</a>
+        </div>
+
+        <div class="nav-right flex-row">
+            <a href="" class="material-icons search-icon">search</a>
+            <a href="" class="material-icons">mic</a>
+            <a href="" class="material-icons">notifications</a>
+            <a href="" class="material-icons">person</a>
+        </div>
+    </nav>
+
+</body>
+
+</html>
